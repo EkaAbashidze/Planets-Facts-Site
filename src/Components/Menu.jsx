@@ -4,8 +4,8 @@ import IconChevron from './svg/IconChevron'
 
 export default function Menu() {
   return (
-    <div className="items-start font-spartan gap-x-[33px] text-[11px] tracking-wide uppercase opacity-75 sm:flex-col sm:opacity-100 sm:text-[15px] w-full h-full sm:bg-background sm:mt-[44px] sm:flex hidden">
-      <div className="flex justify-between items-center w-full pr-8 pl-3">
+    <div className="items-start font-spartan gap-x-[33px] text-[11px] tracking-wide uppercase opacity-75 sm:flex-col sm:opacity-100 sm:text-[15px] w-full h-full sm:bg-background sm:py-[44px] sm:flex hidden">
+      <div className="flex justify-between items-center w-full pr-8 pl-[24px]">
         <div className="flex gap-x-[25px]">
           <div className="bg-white w-[20px] rounded-full h-[20px] hidden sm:block"></div>
           <Link
@@ -17,9 +17,9 @@ export default function Menu() {
         </div>
         <IconChevron />
       </div>
-      <div className="w-full h-px bg-white opacity-10 my-[20px] hidden sm:block"></div>
+      <div className="w-[90%] h-px bg-white opacity-10 my-[20px] hidden sm:block m-auto"></div>
 
-      <div className="flex justify-between items-center  w-full pr-8 pl-3">
+      <div className="flex justify-between items-center  w-full pr-8 pl-[24px]">
         <div className="flex gap-x-[25px]">
           <div className="bg-venus w-[20px] h-[20px] hidden sm:block rounded-full"></div>
           <Link
@@ -31,9 +31,9 @@ export default function Menu() {
         </div>
         <IconChevron />
       </div>
-      <div className="w-full h-px bg-white opacity-10 my-[20px] hidden sm:block"></div>
+      <div className="w-[90%] h-px bg-white opacity-10 my-[20px] hidden sm:block m-auto"></div>
 
-      <div className="flex justify-between items-center  w-full pr-8 pl-3 ">
+      <div className="flex justify-between items-center  w-full pr-8 pl-[24px] ">
         <div className="flex gap-x-[25px]">
           <div className="bg-earth w-[20px] h-[20px] hidden sm:block rounded-full"></div>
           <Link
@@ -45,9 +45,9 @@ export default function Menu() {
         </div>
         <IconChevron />
       </div>
-      <div className="w-full h-px bg-white opacity-10 my-[20px] hidden sm:block"></div>
+      <div className="w-[90%] h-px bg-white opacity-10 my-[20px] hidden sm:block m-auto"></div>
 
-      <div className="flex justify-between items-center  w-full pr-8 pl-3">
+      <div className="flex justify-between items-center  w-full pr-8 pl-[24px]">
         <div className="flex gap-x-[25px]">
           <div className="bg-mars w-[20px] h-[20px] hidden sm:block rounded-full"></div>
           <Link
@@ -59,9 +59,9 @@ export default function Menu() {
         </div>
         <IconChevron />
       </div>
-      <div className="w-full h-px bg-white opacity-10 my-[20px] hidden sm:block"></div>
+      <div className="w-[90%] h-px bg-white opacity-10 my-[20px] hidden sm:block m-auto"></div>
 
-      <div className="flex justify-between items-center  w-full pr-8 pl-3">
+      <div className="flex justify-between items-center  w-full pr-8 pl-[24px]">
         <div className="flex gap-x-[25px]">
           <div className="bg-jupiter w-[20px] h-[20px] hidden sm:block rounded-full"></div>
           <Link
@@ -73,9 +73,9 @@ export default function Menu() {
         </div>
         <IconChevron />
       </div>
-      <div className="w-full h-px bg-white opacity-10 my-[20px] hidden sm:block"></div>
+      <div className="w-[90%] h-px bg-white opacity-10 my-[20px] hidden sm:block m-auto"></div>
 
-      <div className="flex justify-between items-center  w-full pr-8 pl-3">
+      <div className="flex justify-between items-center  w-full pr-8 pl-[24px]">
         <div className="flex gap-x-[25px]">
           <div className="bg-saturn w-[20px] h-[20px] hidden sm:block rounded-full"></div>
           <Link
@@ -87,9 +87,9 @@ export default function Menu() {
         </div>
         <IconChevron />
       </div>
-      <div className="w-full h-px bg-white opacity-10 my-[20px] hidden sm:block"></div>
+      <div className="w-[90%] h-px bg-white opacity-10 my-[20px] hidden sm:block m-auto"></div>
 
-      <div className="flex justify-between items-center  w-full pr-8 pl-3">
+      <div className="flex justify-between items-center  w-full pr-8 pl-[24px]">
         <div className="flex gap-x-[25px]">
           <div className="bg-uranus w-[20px] h-[20px] hidden sm:block rounded-full"></div>
           <Link
@@ -101,9 +101,9 @@ export default function Menu() {
         </div>
         <IconChevron />
       </div>
-      <div className="w-full h-px bg-white opacity-10 my-[20px] hidden sm:block"></div>
+      <div className="w-[90%] h-px bg-white opacity-10 my-[20px] hidden sm:block m-auto"></div>
 
-      <div className="flex justify-between items-center  w-full pr-8 pl-3">
+      <div className="flex justify-between items-center  w-full pr-8 pl-[24px]">
         <div className="flex gap-x-[25px]">
           <div className="bg-neptune w-[20px] h-[20px] hidden sm:block rounded-full"></div>
           <Link

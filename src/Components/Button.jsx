@@ -5,17 +5,23 @@ export default function Button({ number, text, onClick, name }) {
 
   console.log(hover);
   return (
-    <div>
+    <div className="group">
       <button
         onClick={() => onClick()}
         className={
-          "flex items-center justify-start pl-7 gap-x-7 uppercase w-[350px] h-12 border border-white border-opacity-20 transition-all duration-300 ease-linear " +
+          "flex items-center font-spartan font-bold justify-start gap-x-7 uppercase w-[350px] h-[46px] md:h-[40px] lg:h-12 border sm:border-none sm:p-0 sm:w-auto sm:opacity-50 hover:opacity-100 border-white border-opacity-20 transition-all duration-300 ease-linear text-[9px] leading-[25px] tracking-[1.93px] lg:text-[12px] lg:tracking-[2.57px] sm:hover:bg-transparent lg:leading-[25px] md:w-[281px] " +
           hover
         }
       >
-        <h3 className="opacity-50">{number}</h3>
+        <h3 className="opacity-50 pl-7 sm:hidden ">{number}</h3>
         {text}
       </button>
+      <div
+        className={
+          "h-[4px] w-auto sm:hover:bg-transparent md:hover:bg-transparent sm:group-hover:visible group-" +
+          hover
+        }
+      ></div>
     </div>
   );
 }
