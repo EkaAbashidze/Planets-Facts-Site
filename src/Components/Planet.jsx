@@ -18,26 +18,23 @@ export default function Planet({ data }) {
   const [currentSource, setCurrentSource] = useState(planet.overview.source);
 
   useEffect(() => {
-    const planetOne = data.find(
-        (planet) => planet.name.toLowerCase() === name
-      );
-      setCurrentSvg(planetOne.images.planet);
-      setGeologyClicked(false);
-      setCurrentText(planetOne.overview.content);
-      setCurrentSource(planetOne.overview.source);
-  }, [location.pathname])
-
+    const planetOne = data.find((planet) => planet.name.toLowerCase() === name);
+    setCurrentSvg(planetOne.images.planet);
+    setGeologyClicked(false);
+    setCurrentText(planetOne.overview.content);
+    setCurrentSource(planetOne.overview.source);
+  }, [location.pathname]);
 
   return (
     <>
-      <div className="flex items-center justify-between gap-x-48 mt-32 pr-[20%] pl-[25%] ">
+      <div className="flex items-center justify-between gap-x-48 mt-32 lg:pr-[165px] lg:pl-[165px] sm:flex-col md:flex-col">
         <div className="flex flex-col items-center">
-          <img src={currentSvg} alt="Planet" />
+          <img src={currentSvg} alt="Planet" className="top-[554px] sm:h-[111px] sm:w-[111px] md:w-[184px] md:h-[184px]"/>
           {!geologyClicked ? null : (
-            <img
+            <img 
               src={planet.images.geology}
               alt="Planet Geology"
-              className="w-[163px] h-[199px] absolute top-[554px]"
+              className="w-[163px] h-[199px] top-[554px] absolute"
             />
           )}
         </div>
@@ -65,6 +62,7 @@ export default function Planet({ data }) {
               }}
               number="01"
               text="OVERVIEW"
+              name={planet.name}
             />
             <Button
               onClick={() => {
@@ -77,6 +75,7 @@ export default function Planet({ data }) {
               }}
               number="02"
               text="Internal Structure"
+              name={planet.name}
             />
             <Button
               onClick={() => {
@@ -87,6 +86,7 @@ export default function Planet({ data }) {
               }}
               number="03"
               text="Surface Geology"
+              name={planet.name}
             />
           </div>
         </div>
