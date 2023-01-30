@@ -7,6 +7,7 @@ import {
   Route,
   Routes,
 } from "react-router-dom";
+import Menu from "./Components/Menu";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Navigate to="/mercury" />} />
             <Route path="/:name" element={<Planet data={data} />} />
+            <Route path="/menu" element={<Menu/>}  />
           </Routes>
         </div>
       </div>

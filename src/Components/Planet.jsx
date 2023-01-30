@@ -30,7 +30,7 @@ export default function Planet({ data }) {
 
   return (
     <>
-      <div className="flex items-center justify-center gap-x-48 mt-32 ">
+      <div className="flex items-center justify-between gap-x-48 mt-32 pr-[20%] pl-[25%] ">
         <div className="flex flex-col items-center">
           <img src={currentSvg} alt="Planet" />
           {!geologyClicked ? null : (
