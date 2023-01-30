@@ -89,7 +89,7 @@ export default function Planet({ data }) {
           <h1 className="uppercase font-antonio font-normal lg:text-[80px] lg:leading-[104px] text-[40px] leading-[52px] md:text-[48px] md:leading-[62px] ">
             {planet.name}
           </h1>
-          <p className="my-6 font-normal lg:leading-[25px] lg:text-[14px] max-w-[330px] md:max-w-[330px] text-[11px] leading-[22px] min-h-[175px]">{currentText}</p>
+          <p className="my-6 font-normal lg:leading-[25px] lg:text-[14px] max-w-[330px] md:max-w-[330px] text-[11px] leading-[22px] lg:min-h-[175px]">{currentText}</p>
           <a
             className="flex lg:mb-10 opacity-50 items-center gap-x-2 mb-0 font-normal lg:text-[14px] lg:leading-[25px] font-spartan text-[12px] leading-[25px]"
             target="_blank"
